@@ -1,4 +1,5 @@
 1. int val is passed by value and int* ptr is passed by reference
-2. The final value of alpha is 20 because alpha is defined with a integer variable, not a pointer variable.
-3. The final value of beta is 30 because the memory address of beta is passed to processData. 
-
+2. The final value of "alpha" is 20 because "alpha" is defined with a integer variable, not a pointer variable. 
+   Since a copy of its value is passed to "processData" function, chaning the value inside the function will not change the original one. 
+3. The final value of beta is 30 because "beta" is passed by reference. 
+   Since the memory address of "beta" is passed to "processData" function, changing the value inside the function will change the original one directly. 
